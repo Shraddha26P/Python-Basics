@@ -1,0 +1,16 @@
+#Check weather given string is palindrome or not 
+
+String = input("Enter your string: ") 
+print(String) 
+
+reversedstring= ''
+for char in String:
+    reversedstring = char + reversedstring
+    
+print(reversedstring)
+
+if String.lower() == reversedstring.lower():
+    print("Given string is palindrome") 
+            
+else:
+    print("Given string is not palindrome")
